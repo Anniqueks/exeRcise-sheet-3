@@ -44,6 +44,20 @@ c)  For all of the following tasks in this exercise sheet we ask you to
 
 d)  Name 2 strengths and 2 weaknesses of git. (Don't forget to create a
     commit after this answer, see *1c*)
+    
+```{r}
+#Strength 1: Each developer has a complete copy of the entire repository, including the entire history.
+#This makes it possible to work offline and improves redundancy and data security
+#Strength 2: Git makes it very easy to create, manage and merge branches. 
+#This enables parallel development threads and promotes a clean code base 
+#through feature branches and pull requests.
+#Weakness 1:  Git can be complicated and confusing for beginners. The multitude of commands and options 
+#requires a steep learning curve, especially for developers who are not familiar with version control systems.
+#Weakness 2: Resolving merge conflicts can be time-consuming and complex, especially in large projects with many participants. 
+#This often requires manual intervention and good knowledge of the code base.
+```
+    
+    
 e)  Knit this exercise sheet. Some new files will automatically be
     generated when knitting the sheet e.g. the HTML page. Ignore these
     files, as we only want to track the source files themselves.
