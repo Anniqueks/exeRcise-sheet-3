@@ -105,6 +105,23 @@ b)  Load the data for both years into R. Check the type of the count
     not numeric? Fix the problem in an appropriate manner, it is OK if
     some of the counts are inaccurate because of this. Explain your
     solution and the repercussions.
+    
+```{r}
+# Loading the data: see 3a)
+
+class(names_2022$Anzahl)
+class(names_2023$Anzahl)
+#type of the count variable is "character"
+
+unique(names_2022$Anzahl)
+unique(names_2023$Anzahl)
+#sometimes it says something non-numeric like "4 oder weniger"
+
+names_2022$Anzahl <- as.numeric(gsub("[^0-9]", "", names_2022$Anzahl))
+names_2023$Anzahl <- as.numeric(gsub("[^0-9]", "", names_2023$Anzahl))
+#We have used the gsub() function to remove non-numeric characters from the “Number” column. For example, we have turned “4 or less” into 4, which makes our data slightly less accurate because we are now working with exactly 4 instead of less than/equal to 4.
+```
+
 
 c)  Calculate the total number of babies born in Munich in 2022
     and 2023. Which year had the bigger baby-boom?
