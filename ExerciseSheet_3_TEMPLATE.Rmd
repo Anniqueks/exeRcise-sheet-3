@@ -201,6 +201,24 @@ d)  Come up with a (research) question you want to answer with the data
 ```
 
 e)  Use R to answer your chosen question.
+
+
+```{r}
+install.packages("countrycode")
+library(countrycode)
+
+child_mortality$Entity <- gsub("Timor", "East Timor", child_mortality$Entity)
+child_mortality$Entity <- gsub("Micronesia \\(country\\)", "Micronesia (Federated States of)", child_mortality$Entity)
+
+child_mortality$continent <- countrycode(child_mortality$Entity, "country.name", "continent")
+
+avg_rate <- child_mortality %>% group_by(Entity, continent) %>% summarize(avg_rate = mean(`Child Mortality Estimates (CME Info (2016))`, na.rm = TRUE))
+top_10_countries <- avg_rate %>% arrange(avg_rate) %>% head(10)
+ print(head(top_10_countries, 10))
+
+#The top 10 countries with the lowest infant mortality rates are all European with the exception of Cyprus, which is Asian.
+```
+
 f)  Create a meaningful plot / figure with the dataset. Make sure to
     provide a figure caption (via the chunk options / Rmarkdown) and
     correctly label the figure.
