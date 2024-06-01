@@ -223,6 +223,21 @@ f)  Create a meaningful plot / figure with the dataset. Make sure to
     provide a figure caption (via the chunk options / Rmarkdown) and
     correctly label the figure.
 
+```{r}
+ggplot(data = top_10_countries,
+       aes(
+         x = Entity,
+         y = avg_rate,
+         fill = continent)) + 
+  geom_col(position = "dodge") +
+  labs(title = "Average child mortality rate of the top 10 countries with the lowest ",
+       x = "Country",
+       y = "Average child mortality rate",
+       fill = "continent",
+       caption = "source: own representation based on data from GitHub")
+```
+
+
 ## Final Note
 
 Make sure to push all your commits and changes to GitHub before
