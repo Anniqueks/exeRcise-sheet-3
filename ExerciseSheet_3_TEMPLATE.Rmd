@@ -195,6 +195,11 @@ d)  Come up with a (research) question you want to answer with the data
     and briefly explain why you believe this is an interesting question
     within one sentence. It should be a question that can be answered
     with the dataset and using R.
+```{r}
+#(research) question: "Are the top 10 countries with the lowest child mortality rates all from the same continent?" 
+#The question is interesting because it provides insights into the regional distribution of health resources and highlights potential regional differences in infant mortality.
+```
+
 e)  Use R to answer your chosen question.
 f)  Create a meaningful plot / figure with the dataset. Make sure to
     provide a figure caption (via the chunk options / Rmarkdown) and
