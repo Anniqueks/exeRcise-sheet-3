@@ -188,8 +188,8 @@ child_mortality <- read_csv("./data/Child Mortality Estimates - CME Info (2018).
 
 c)  Put the name / title of the dataset and a link to it below.
 
--   Dataset Name: ...
--   Link: <https://github.com/owid/owid-datasets/>...
+-   Dataset Name: Child Mortality Estimates - CME Info (2018) 
+-   Link: <https://github.com/owid/owid-datasets/tree/master/datasets/Child%20Mortality%20Estimates%20-%20CME%20Info%20(2018)>
 
 d)  Come up with a (research) question you want to answer with the data
     and briefly explain why you believe this is an interesting question
