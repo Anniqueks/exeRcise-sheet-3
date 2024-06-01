@@ -180,6 +180,12 @@ a)  Go to <https://github.com/owid/owid-datasets/tree/master/datasets>
     and choose a dataset that interests you. You can have a look at
     <https://ourworldindata.org/> to gather some inspiration.
 b)  Download the dataset and track it in git.
+
+```{r}
+child_mortality <- read_csv("./data/Child Mortality Estimates - CME Info (2018).csv")
+```
+
+
 c)  Put the name / title of the dataset and a link to it below.
 
 -   Dataset Name: ...
