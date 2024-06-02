@@ -204,7 +204,6 @@ e)  Use R to answer your chosen question.
 
 
 ```{r}
-install.packages("countrycode")
 library(countrycode)
 
 child_mortality$Entity <- gsub("Timor", "East Timor", child_mortality$Entity)
@@ -223,14 +222,14 @@ f)  Create a meaningful plot / figure with the dataset. Make sure to
     provide a figure caption (via the chunk options / Rmarkdown) and
     correctly label the figure.
 
-```{r}
+```{r fig.cap="Average child mortality rate of the top 10 countries with the lowest rate worldwide"}
 ggplot(data = top_10_countries,
        aes(
          x = Entity,
          y = avg_rate,
          fill = continent)) + 
   geom_col(position = "dodge") +
-  labs(title = "Average child mortality rate of the top 10 countries with the lowest ",
+  labs(title = "The 10 lowest child mortality rates",
        x = "Country",
        y = "Average child mortality rate",
        fill = "continent",
