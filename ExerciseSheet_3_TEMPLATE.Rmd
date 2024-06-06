@@ -215,7 +215,7 @@ avg_rate <- child_mortality %>% group_by(Entity, continent) %>% summarize(avg_ra
 top_10_countries <- avg_rate %>% arrange(avg_rate) %>% head(10)
  print(head(top_10_countries, 10))
 
-#The top 10 countries with the lowest infant mortality rates are all European with the exception of Cyprus, which is Asian.
+#The top 10 countries with the lowest infant mortality rates in the world are all European with the exception of Cyprus, which is Asian.
 ```
 
 f)  Create a meaningful plot / figure with the dataset. Make sure to
